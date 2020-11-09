@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+html{
+	border-width: 575px;
+	}
+
+header {
+	margin-bottom: 0;
+    background-color: silver;
+}
+
+body {
+	padding: 10px;
+	border-width: 575px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	width: 575px;
+}
+
+
+.logo {
+	font-family: 'Caveat Brush', serif;
+	font-size: 48px;
+	text-align: center;
+}
+
+.menu-items {
+    font-family: 'Caveat Brush', serif;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+#NewReleases {
+	border-color: black;
+    border-width: 1pt;
+    border-style: solid;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+#Men {
+
+	border-color: black;
+    border-width: 1pt;
+    border-style: solid;
+    border-radius: 16px;
+     text-decoration: none;
+}
+
+#Women {
+	border-color: black;
+    border-width: 1pt;
+    border-style: solid;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+#Kids {
+	border-color: black;
+    border-width: 1pt;
+    border-style: solid;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+#Collections {
+	border-color: black;
+    border-width: 1pt;
+    border-style: solid;
+    border-radius: 16px;
+    text-decoration: none;
+}
