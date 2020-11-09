@@ -6,7 +6,7 @@ html{
 
 header {
 	margin-bottom: 0;
-    background-color: silver;
+	background-color: silver;
 }
 
 body {
@@ -19,6 +19,10 @@ body {
 	width: 575px;
 }
 
+main{
+	background-color: silver;
+	text-align: center;
+}
 
 .logo {
 	font-family: 'Caveat Brush', serif;
@@ -32,6 +36,9 @@ body {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+   
+
+
 }
 
 
@@ -74,4 +81,8 @@ body {
     border-style: solid;
     border-radius: 16px;
     text-decoration: none;
+}
+
+footer{
+    text-align: center;
 }
