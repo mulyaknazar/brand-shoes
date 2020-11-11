@@ -1,88 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
-html{
-	border-width: 575px;
-	}
 
-header {
-	margin-bottom: 0;
-	background-color: silver;
+
+header{
+    max-width: 1250px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 5px;
+    font-family: 'Caveat Brush', serif;
+    background-color: #f2f0ee;
+
 }
 
-body {
-	padding: 10px;
-	border-width: 575px;
-	margin-top: 0px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 10px;
-	width: 575px;
+header nav .logo {
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 30px;
+    padding: 0.15em 0.6em 0.15em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 5em;
+    border-color: black;
+}
+
+.menu-items input {
+    font-size: 30px;
+    margin: 0.3em;
+}
+
+.search {
+    padding: 0.15em;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 1em;
+    border-color: black;
+}
+
+ header nav div .find {
+    font-size: 25px;
+    padding: 0.15em;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 0.12em;
+    border-color: black;
+    cursor: pointer;
 }
 
 main{
-	background-color: silver;
+
+    max-width: 1250px;
+	background-color: #f2f0ee;
 	text-align: center;
-}
-
-.logo {
-	font-family: 'Caveat Brush', serif;
-	font-size: 48px;
-	text-align: center;
-}
-
-.menu-items {
-    font-family: 'Caveat Brush', serif;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-   
-
-
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-#NewReleases {
-	border-color: black;
-    border-width: 1pt;
-    border-style: solid;
-    border-radius: 16px;
-    text-decoration: none;
+
+.product-list {
+    display: flex;
+  }
+ 
+ .mens-shoes {
+  flex-grow: 25%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.womens-shoes {
+  flex-grow: 25%;
+ 
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kids-shoes {
+  flex-grow: 25%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#Men {
 
-	border-color: black;
-    border-width: 1pt;
-    border-style: solid;
-    border-radius: 16px;
-     text-decoration: none;
+footer {
+text-align: center;
 }
 
-#Women {
-	border-color: black;
-    border-width: 1pt;
-    border-style: solid;
-    border-radius: 16px;
-    text-decoration: none;
-}
-
-#Kids {
-	border-color: black;
-    border-width: 1pt;
-    border-style: solid;
-    border-radius: 16px;
-    text-decoration: none;
-}
-
-#Collections {
-	border-color: black;
-    border-width: 1pt;
-    border-style: solid;
-    border-radius: 16px;
-    text-decoration: none;
-}
-
-footer{
-    text-align: center;
-}
