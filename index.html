@@ -1,128 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<title>Brand shoes</title>
- 	<link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brand shoes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/clock-style.css" />
 </head>
 
 <body>
-	<header id="home">
-		<nav>
-			<div class="logo">brandshoes.com</div>
-			<div class="menu-items">
-				<a href="#NewReleases">New Releases</a>
-				<a href="#Men">Men</a>
-				<a href="#Women">Women</a>
-				<a href="#Kids">Kids</a>
-				<a href="#Collections">Collections</a>
-				<input class="search" type="search" name="q" placeholder="search">
-				<button class="find">Find</button>
-				<button class="basket"><img src="img/basket.svg" alt="image" width="45" height="45"></button>
-	
-			</div>
-		</nav>
-	</header>
-	
-	<main>
-	<div class="product-list">
-		<div class= mens-shoes>
-				<h2 id="Men">Men's shoes</h2>
-				<img src="img/men_nike_air_force_white.png" alt="Nike Air Force 1 '07">
-				<div class="shoes-title-name">
-				 <h3>Nike Air Force 1 '07</h3>
-				</div>
-				<div class="item-description"> <p>Men's Shoes<br> 2 colours<br> $109.90</p></div>
-				<img src="img/men_nike_air_max_leather.png" alt="Nike Air Max Plus 3 Leather">
-				<div class="shoes-title-name">
-				 <h3>Nike Air Max Plus 3 Leather</h3>
-				</div>
-				<div class="item-description"> <p>Men's Shoes<br> 2 colours<br> $149.90</p></div>
-				
-				<img src="img/men_nike_air_max_plus.png" alt="Nike Air Max Plus">
-				<div class="shoes-title-name">
-				 <h3>Nike Air Max Plus</h3>
-				</div>
-				<div class="item-description">
-				 <p>Men's Shoes<br> 2 colours<br> $139.90</p>
-				</div>	
-			</div>
-			<div class="womens-shoes">
-				<h2 id="Women">Women's shoes</h2>
-				<img src="img/women_nike_air_max_270.png" alt="Nike Air Max">
-				<div class="shoes-title-name">
-				 <h3>Nike Air Max 270</h3>
-				</div>
-				<div class="item-description">
-				 <p>Women's Shoes<br> 4 colours<br> $119.90</p>
-				</div>
-				<img src="img/women_nike_air_max_90.png" alt="Nike Air Max 90">
-				<div class="shoes-title-name">
-				 <h3>Nike Air Max 90</h3>
-				</div>
-				<div class="item-description">
-				 <p>Women's Shoes<br> 2 colours<br> $114.90</p>
-				</div>
-				<img src="img/women_nike_air_max_95.png" alt="Nike Air Max 95">
-				<div class="shoes-title-name">
-				 <h3>Nike Air Max 95</h3>
-				</div>
-				<div class="item-description">
-				 <p>Women's Shoes<br> 1 colours<br> $139.90</p>
-				</div>
-			</div>
-			<div class="kids-shoes">
-				<h2 id="Kids">Kids shoes</h2>
-				<img src="img/kid_nike_force_lv8.png" alt="Nike Force 1 LV8 KSA">
-				<div class="shoes-title-name">
-				 <h3>Nike Force 1 LV8 KSA</h3>
-				</div>
-				<div class="item-description">
-				 <p>Younger kid's Shoe<br> 2 colours<br> $39.90</p>
-				</div>
-				<img src="img/kids_nike_air_max_90.png" alt="Nike Air Max 90 LTR">
-				<div class="shoes-title-name">
-				 <h3>Nike Air Max 90 LTR</h3>
-				</div>
-				<div class="item-description">
-				 <p>Older kid's Shoe<br> 2 colours<br> $79.90</p>
-				</div>
-				<img src="img/kid_nike_air_vapormax.png" alt="Nike Force VaporMax">
-				<div class="shoes-title-name">
-				 <h3>Nike Force VaporMax</h3>
-				</div>
-				<div class="item-description">
-				 <p>Older kid's Shoe<br> 1 colours<br> $129.95</p>
-			</div>
-		</div>
-	</div>
-	</main>
-	<footer>
-	<form>
-		<h2>Contact us</h2>
-		<p>
-			<label>
-				<input type="text" placeholder="Your Name" required name="user-name">
-			</label><br>
-		</p>
-		<p>
-			<label><input type="email" placeholder="Email address" required name="user-email">
-			</label><br>
-		</p>
-		<p>
-			<label>
-				<input type="number" placeholder="Phone number">
-			</label><br>
-		</p>
-		<p>
-			<label>
-				<textarea placeholder="Type your message" required name="message"></textarea>
-			</label><br>
-		</p>
-		<input type="submit" value="Send" >
-	</form>
-	</footer>
+    <header class="container-header" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">brandshoes.com</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#NewReleases">New Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Men">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Women">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Kids">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Collections">Collections</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <div class="cart">
+                        <button type="button" class="btn btn-dark">Cart</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div id="year" class="year"></div>
+    <h1>New Year Countdown</h1>
+    <div id="countdown" class="countdown">
+        <div class="time">
+            <h2 id="days">00</h2>
+            <small>days</small>
+        </div>
+        <div class="time">
+            <h2 id="hours">00</h2>
+            <small>hours</small>
+        </div>
+        <div class="time">
+            <h2 id="minutes">00</h2>
+            <small>minutes</small>
+        </div>
+        <div class="time">
+            <h2 id="seconds">00</h2>
+            <small>seconds</small>
+        </div>
+    </div>
+
+    <img src="/img/spinner.gif" alt="Loading..." id="loading" class="loading" />
+
+
+    <main class="container content-section">
+        <h2 class="section-header" id="Men">Men's shoes</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/men_nike_air_force_white.png" alt="Nike Air Force 1 '07">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Force 1 '07</span>
+                    <p>Men's Shoes<br> 2 colours</p>
+                    <span class="shop-item-price">$109.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/men_nike_air_max_leather.png" alt="Nike Air Max Plus 3 Leather">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max Plus 3 Leather</span>
+                    <p>Men's Shoes<br> 2 colours</p>
+                    <span class="shop-item-price">$149.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/men_nike_air_max_plus.png" alt="Nike Air Max Plus">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max Plus</span>
+                    <p>Men's Shoes<br> 2 colours</p>
+                    <span class="shop-item-price">$139.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/men-air-max-95.jpg" alt="Nike Air Max 95">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max 95</span>
+                    <p>Men's Shoes<br> 1 colour</p>
+                    <span class="shop-item-price">$180</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/men-air-vapormax-plus.png" alt="Nike Air VaporMax Plus">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air VaporMax Plus</span>
+                    <p>Men's Shoes<br> 3 colours</p>
+                    <span class="shop-item-price">$200</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/men-air-force-1-gtx.jpg" alt="Nike Air Force 1 GTX">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Force 1 GTX</span>
+                    <p>Men's Shoes<br> 3 colours</p>
+                    <span class="shop-item-price">$150</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 class="title" id="Women">Women's shoes</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/women_nike_air_max_270.png" alt="Nike Air Max">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max</span>
+                    <p>Women's Shoes<br> 4 colours</p>
+                    <span class="shop-item-price">$119.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/women_nike_air_max_90.png" alt="Nike Air Max 90">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max 90</span>
+                    <p>Women's Shoes<br> 2 colours</p>
+                    <span class="shop-item-price">$114.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/women_nike_air_max_95.png" alt="Nike Air Max 95">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max 95</span>
+                    <p>Women's Shoes<br> 1 colour</p>
+                    <span class="shop-item-price">$139.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/women-air-max-90-twist.jpg" alt="Nike Air Max 90 Twist">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max 90 Twist</span>
+                    <p>Women's Shoes<br> 1 colour</p>
+                    <span class="shop-item-price">$120</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/women-air-max-97.jpg" alt="Nike Air Max 97">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max 97</span>
+                    <p>Women's Shoes<br> 9 colours</p>
+                    <span class="shop-item-price">$170</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/women-air-max-verona.jpg" alt="Nike Air Max Verona">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max Verona</span>
+                    <p>Women's Shoes<br> 5 colours</p>
+                    <span class="shop-item-price">$130</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 class="title" id="Kids">Kids shoes</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/kid_nike_force_lv8.png" alt="Nike Force 1 LV8 KSA">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Force 1 LV8 KSA</span>
+                    <p>Younger kid's Shoe<br> 2 colours</p>
+                    <span class="shop-item-price">$39.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/kids_nike_air_max_90.png" alt="Nike Air Max 90 LTR">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max 90 LTR</span>
+                    <p>Older kid's Shoe<br> 2 colours</p>
+                    <span class="shop-item-price">$79.90</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/kid_nike_air_vapormax.png" alt="Nike Force VaporMax">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Force VaporMax</span>
+                    <p>Older kid's Shoe<br> 1 colour</p>
+                    <span class="shop-item-price">$129.95</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <img class="shop-item-image" src="img/kid-air-max-plus-big.jpg" alt="Nike Air Max Plus Big">
+                <div class="shop-item-details">
+                    <span class="shop-item-title">Nike Air Max Plus Big</span>
+                    <p>Older kid's Shoe<br> 4 colours</p>
+                    <span class="shop-item-price">$145</span>
+                    <button class="btn btn-dark shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-dark btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <form class="contact-form">
+            <h2>Contact us</h2>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">e-mail adress</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Phone number</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Your message</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <br><button type="button" class="btn btn-secondary">Send</button>
+        </form>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/store.js"></script>
+
 </body>
-	
+
 </html>
